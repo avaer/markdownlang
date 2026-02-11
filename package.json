@@ -1,6 +1,6 @@
 {
   "name": "markdownlang",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An AI-native programming environment where markdown files are executable programs",
   "type": "module",
   "bin": {
