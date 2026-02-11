@@ -1,0 +1,31 @@
+---
+name: greeting
+description: >-
+  Generates a friendly personalized greeting message in a given language
+input:
+  type: object
+  properties:
+    name:
+      type: string
+    language:
+      type: string
+  required: [name, language]
+output:
+  type: object
+  properties:
+    greeting:
+      type: string
+    emoji:
+      type: string
+  required: [greeting, emoji]
+---
+
+# Greeting Generator
+
+Generate a warm, friendly greeting for a person named {{ .name }}.
+
+The greeting must be written in {{ .language }}.
+
+Return:
+- `greeting`: the greeting message (1-2 sentences)
+- `emoji`: a single emoji that fits the mood of the greeting

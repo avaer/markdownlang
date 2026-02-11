@@ -1,0 +1,36 @@
+---
+name: summarize
+description: >-
+  Summarizes a block of text into bullet points with a headline
+input:
+  type: object
+  properties:
+    text:
+      type: string
+    max_bullets:
+      type: integer
+  required: [text, max_bullets]
+output:
+  type: object
+  properties:
+    headline:
+      type: string
+    bullets:
+      type: array
+      items:
+        type: string
+    word_count:
+      type: integer
+  required: [headline, bullets, word_count]
+---
+
+# Text Summarizer
+
+Read the following text carefully:
+
+{{ .text }}
+
+Produce a summary with:
+- `headline`: a concise headline (max 10 words)
+- `bullets`: up to {{ .max_bullets }} bullet points capturing the key ideas
+- `word_count`: total word count of the original text

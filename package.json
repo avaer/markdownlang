@@ -1,0 +1,26 @@
+{
+  "name": "markdownlang",
+  "version": "0.1.0",
+  "description": "An AI-native programming environment where markdown files are executable programs",
+  "type": "module",
+  "bin": {
+    "markdownlang": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "start": "node dist/cli.js"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "dotenv": "^16.5.0",
+    "js-yaml": "^4.1.0",
+    "openai": "^4.104.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.19.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.0"
+  }
+}

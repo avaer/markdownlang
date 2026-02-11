@@ -1,0 +1,23 @@
+node_modules/
+dist/
+*.js
+*.d.ts
+*.map
+!src/**
+
+# Environment / secrets
+.env
+.env.*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated compiled output
+*.compiled.ts
